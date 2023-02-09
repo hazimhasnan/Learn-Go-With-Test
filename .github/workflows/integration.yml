@@ -32,13 +32,13 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 6.5
-        run: gradle --version
+      - run: gradle --version
 
       - name: Installing Node
         uses: actions/setup-node@v3
         with:
           node-version: 16
-        run: node --v
+      - run: node --v
 
       - name: Installing Cargo
         uses: actions-rs/toolchain@v1
