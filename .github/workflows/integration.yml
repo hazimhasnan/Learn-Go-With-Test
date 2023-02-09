@@ -44,7 +44,7 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-        run: cargo version
+      - run: cargo version
 
       - name: Test
         run: go test -v ./...
